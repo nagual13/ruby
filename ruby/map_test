@@ -1,0 +1,12 @@
+Class Array
+  input = [11, -2, 32, 14, -5, 26]
+  expected = [22, 64, -10]
+  def even_map
+    self.select {|input| input%2==0}
+    yield
+    raise 'Implement me'
+  end
+end
+result = Array.new []
+result = input.even_map { |item| item * 2 }
+puts result

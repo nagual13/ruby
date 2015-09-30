@@ -1,0 +1,18 @@
+ def count_memory_slots
+    @count_memory_slots
+  end
+  def self.memory_type
+    @memory_type
+  end
+  def self.count_sockets
+    @count_sockets
+  end
+  def self.cpu_type
+    @cpu_type
+  end
+
+
+  def self.memory_slots(a, b)
+      @count_memory_slots = a
+      @memory_type =b
+    end
